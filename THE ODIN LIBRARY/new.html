@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>THE ODIN LIBRARY</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="new.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header>
+      <h1>📚 THE ODIN LIBRARY</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Books</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="addBookBtn">+ Add Book</button>
+    </header>
+
+    <!-- Book Section -->
+    <main>
+      <h2>Available Books</h2>
+      <div id="my" class="book-container">
+         
+
+        
+        
+      </div>
+    </main>
+
+    <!-- Dialog Box Form -->
+    <dialog id="bookDialog">
+      <form method="dialog">
+        <h3>Add New Book</h3>
+        <label id="change" for="title">Book Title:</label>
+        <input type="text" id="title" name="title" required />
+
+        <label id="change"for="author">Author:</label>
+        <input type="text" id="author" name="author" required />
+
+        <label id="change"for="pages">Number of pages:</label>
+        <input type="number" id="pages" name="pages" required /> 
+
+        <label id="change" for="status">Have you complete this book?</label>
+        <label id="Yes" for="author1">Yes</label>
+        <input value="Yes" type="radio" id="author1" name="status" required />
+        <label id="no" for="author2">No</label>
+        <input value="No" type="radio" id="author2" name="status" required />
+         
+
+        <div class="form-btns">
+          <button id="closeDialog" type="button">Cancel</button>
+          <button id="addBook" type="submit">Add</button>
+        </div>
+      </form>
+    </dialog>
+
+    
+
+    <footer>
+      <p>© 2025 THE ODIN LIBRARY | Designed by <a href="https://github.com/munawwar-ali">Munawwar</a> ❤️</p>
+    </footer>
+
+    <!-- JavaScript (for dialog box only) -->
+   <script src="new.js"></script>
+</html>
